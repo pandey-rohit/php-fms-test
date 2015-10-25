@@ -1,0 +1,47 @@
+header{
+	border-bottom: 1px solid #333;
+	background-color: #ccc;
+	height: 30%;
+}
+
+header ul.nav {
+	margin:0;
+	padding:0;
+	position: relative;
+	float: right;
+	margin-top: 10%;
+	margin-right: 5%;
+}
+
+header ul.nav li {
+	list-style: none;
+	float: left;
+	margin:5px;
+	padding: 5px;
+}
+
+header ul.nav li a {
+	text-decoration: none;
+}
+
+.folder_creation form fieldset {
+	width: 50%;
+	margin: 10% auto;
+}
+
+.folder_creation form input[type="text"] {
+	width: 70%;
+}
+
+.file_creation form fieldset {
+	width: 50%;
+	margin: 10% auto;
+}
+
+.file_creation form input[type="text"] {
+	width: 70%;
+}
+
+.files_listing table {
+	margin: 10% auto;
+}
