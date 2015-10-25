@@ -1,3 +1,9 @@
+<?php /* Database connection establishment */ ?>
+<?php 
+include "config/db_connection.php"; 
+$conn = new DatabaseConnection();
+?>
+
 <html>
 <head>
 	<title>File Management System</title>

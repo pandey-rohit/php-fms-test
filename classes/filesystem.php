@@ -5,6 +5,10 @@ include("../interfaces/FileSystemInterface.php");
 
 class fileSystem implements FileSystemInterface
 {
+  
+  public function __construct() {
+    
+  }  
  
   public function createFile(FileInterface $file, FolderInterface $parent) {
 
@@ -57,6 +61,6 @@ class fileSystem implements FileSystemInterface
   public function getFiles(FolderInterface $folder){
 
   }
-  
+
 }
 ?>

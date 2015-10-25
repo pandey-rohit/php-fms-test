@@ -6,6 +6,10 @@ include("../interfaces/FolderInterface.php");
 class folder implements FolderInterface
 {
 
+  public function __construct() {
+    
+  }
+
   public function getName(){
 
   }
@@ -29,5 +33,5 @@ class folder implements FolderInterface
   public function setPath($path){
 
   }
-  
+
 }
