@@ -1,13 +1,13 @@
 <?php
 /* Include file system interface */
-include("../interfaces/FileSystemInterface.php");
+include("interfaces/FileSystemInterface.php");
 
 
 class fileSystem implements FileSystemInterface
 {
   
   public function __construct() {
-    
+
   }  
  
   public function createFile(FileInterface $file, FolderInterface $parent) {
@@ -30,7 +30,7 @@ class fileSystem implements FileSystemInterface
 
   }
 
-  public function createFolder(FolderInterface $folder, FolderInterface $parent){
+  public function createFolder(FolderInterface $folder, FolderInterface $parent){      
 
   }
 

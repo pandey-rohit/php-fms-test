@@ -1,9 +1,3 @@
-<?php /* Database connection establishment */ ?>
-<?php 
-include "config/db_connection.php"; 
-$conn = new DatabaseConnection();
-?>
-
 <html>
 <head>
 	<title>File Management System</title>
@@ -11,6 +5,35 @@ $conn = new DatabaseConnection();
 	<script src="assets/js/script.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 </head>
+
+
+<?php /* Database connection establishment */ ?>
+<?php 
+include "config/db_connection.php"; 
+$conn = new DatabaseConnection();
+
+include "classes/files.php";
+$files = new file();
+
+include "classes/folders.php";
+
+include "classes/filesystem.php";
+
+
+
+if(isset($_REQUEST['folder_submit']))
+{
+	$folder = new folder();
+	$folder->setName($_REQUEST['folder']);
+	$folder->setCreatedTime(date('Y-m-d h:i:s'));
+	$folder->setPath("storage");
+
+	$folder->insert_folder_record();
+	
+	mkdir("storage/" . $_REQUEST['folder']);
+}
+?>
+
 
 <body>
 <header>

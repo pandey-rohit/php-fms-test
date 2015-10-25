@@ -1,6 +1,6 @@
 <?php
 /* Include file interface */
-include("../interfaces/FileInterface.php");
+include("interfaces/FileInterface.php");
 
 
 class file implements FileInterface
@@ -53,6 +53,6 @@ class file implements FileInterface
   public function getPath(){
 
   }
-  
+
 }
 ?>
